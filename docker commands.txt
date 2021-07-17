@@ -1,0 +1,2 @@
+docker build -t assignment2:latest .
+docker run  -dit --rm --name assignment2 -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v c://users/pankaja/documents/Projects/adv_dsi_assignment2:/home/jovyan/work -v c://users/pankaja/documents/Projects/adv_dsi_assignment2/src:/home/jovyan/work/src assignment2:latest 
